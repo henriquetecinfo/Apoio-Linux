@@ -1,0 +1,29 @@
+Alterando permissões com o chmod
+
+chmod ugoa+-=rwx arquivo/diretório
+Sendo que:
+
+u: define que as regras serão aplicadas ao usuário
+
+g: define que as regras serão aplicadas ao grupo
+
+o: define que as regras serão aplicadas aos outros usuários do sistema
+
+a: define que as regras serão aplicadas a todos
+
++: adiciona permissão
+
+-: remove permissão
+
+=: informa que a permissão aplicada deve ser exatamente igual a que será indicada a seguir
+
+
+r: atribui a permissão de leitura
+
+w: atribui a permissão de escrita
+
+x: atribui a permissão de execução
+
+Com isso, já podemos arriscar um primeiro comando. Para permitir que usuários do grupo "canaltech" possam editar o arquivo "importante.txt", basta digitar:
+
+sudo chmod g+w importante.txt
